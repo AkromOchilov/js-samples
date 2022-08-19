@@ -47,3 +47,19 @@ number = Number(number); */
 //Local storage 5mb gacha malumot qabul qiladi, local storagedagi malumotlar komp yoki browser yangilanganda yoki ochganda malumotlar ochib ketmaydi.
 
 //Session storage 5mb gacha, o'chib ketadi
+
+let a = prompt('Istalgan son kiriting:');
+a = Number(a);
+console.log(`Siz kiritgan birinchi son: ${a}`);
+
+for (i = 0; true; i++) {
+	let b = prompt('Yana son kiriting:');
+	b = Number(b);
+	if (b > 0 || b < 0) {
+		console.log(`Siz kiritgan son ${b}`);
+		a += b;
+		console.log(`Barcha oldingi sonlar yig'indisi: ${a}`);
+	} else {
+		break;
+	}
+}
